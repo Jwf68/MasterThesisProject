@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="1g64yj2979b6qkdstz7">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Error code&#10;Instruction type"/>
+	</node>
+</nodeSet>

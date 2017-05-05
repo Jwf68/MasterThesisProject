@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhj293y4y5erijcj">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="ClassDiagram"/>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.DocFactoryCommunicator">
+			<property name="bounds" value="735,-465,466,201"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.ErrorCatalog">
+			<property name="bounds" value="1255,-125,200,221"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:e_method:src:se.com.package1.ErrorCatalog.ErrorCatalog:ErrorCatalog">
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.ErrorCatalog:lnkErrorMetadata">
+				<property name="sourceAnchor" value="1420,101"/>
+				<property name="targetAnchor" value="1420,180"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.ErrorCatalog:lnkErrorMetadata">
+					<property name="bounds" value="1440,140,30,29"/>
+					<property name="weight" value="0.4936708860759494"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.ErrorMetadata">
+			<property name="bounds" value="1375,175,184,342"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:e_field:src:se.com.package1.ErrorMetadata.errorCode">
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Repairer">
+			<property name="bounds" value="226,575,249,289"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.Repairer:lnkDevice">
+				<property name="sourceAnchor" value="480,849"/>
+				<property name="targetAnchor" value="689,1060"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.Repairer:lnkDevice">
+					<property name="bounds" value="560,1052,117,29"/>
+					<property name="weight" value="0.7376448855166305"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.Repairer:lnkDevice">
+					<property name="bounds" value="685,1024,30,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.Repairer:Person">
+				<property name="sourceAnchor" value="231,660"/>
+				<property name="targetAnchor" value="162,660"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="property:e_property:jdt=e_class=src=se.com.package1.Repairer:repairerID">
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.Repairer:lnkLocation">
+				<property name="sourceAnchor" value="480,700"/>
+				<property name="targetAnchor" value="680,700"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.Repairer:lnkLocation">
+					<property name="bounds" value="529,703,102,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.Repairer:lnkLocation">
+					<property name="bounds" value="656,668,14,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.RepairerCatalog">
+			<property name="bounds" value="155,275,320,214"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairerCatalog:lnkRepairer">
+				<property name="sourceAnchor" value="346,494"/>
+				<property name="targetAnchor" value="346,580"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairerCatalog:lnkRepairer">
+					<property name="bounds" value="349,541,30,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.RepairSequenser">
+			<property name="bounds" value="766,-95,330,462"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkRepairerCatalog">
+				<property name="sourceAnchor" value="771,292"/>
+				<property name="targetAnchor" value="480,292"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkRepairerCatalog">
+					<property name="bounds" value="490,260,14,29"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkRepairerCatalog">
+					<property name="bounds" value="574,295,103,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkVideoRepairInstruction">
+				<property name="sourceAnchor" value="771,18"/>
+				<property name="targetAnchor" value="489,18"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkVideoRepairInstruction">
+					<property name="bounds" value="537,21,186,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkVideoRepairInstruction">
+					<property name="bounds" value="499,-14,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkThingCatalog">
+				<property name="sourceAnchor" value="1065,372"/>
+				<property name="targetAnchor" value="1065,521"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkThingCatalog">
+					<property name="bounds" value="978,432,84,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkThingCatalog">
+					<property name="bounds" value="1068,482,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkDocFactoryCommunicator">
+				<property name="sourceAnchor" value="913,-90"/>
+				<property name="targetAnchor" value="913,-259"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkDocFactoryCommunicator">
+					<property name="bounds" value="916,-258,14,29"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkDocFactoryCommunicator">
+					<property name="bounds" value="720,-239,192,29"/>
+					<property name="weight" value="0.8455598455598455"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrneRepairer">
+				<property name="sourceAnchor" value="771,293"/>
+				<property name="targetAnchor" value="461,580"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrneRepairer">
+					<property name="bounds" value="633,422,127,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrneRepairer">
+					<property name="bounds" value="468,529,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrentRepairer">
+				<property name="sourceAnchor" value="771,293"/>
+				<property name="targetAnchor" value="461,580"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrentRepairer">
+					<property name="bounds" value="468,529,14,29"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrentRepairer">
+					<property name="bounds" value="633,422,127,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkTextRepairInstruction">
+				<property name="sourceAnchor" value="771,110"/>
+				<property name="targetAnchor" value="499,110"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkTextRepairInstruction">
+					<property name="bounds" value="541,113,189,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkTextRepairInstruction">
+					<property name="bounds" value="509,78,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkErrorCatalog">
+				<property name="sourceAnchor" value="1101,5"/>
+				<property name="targetAnchor" value="1260,5"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkErrorCatalog">
+					<property name="bounds" value="1236,-27,14,29"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkErrorCatalog">
+					<property name="bounds" value="1140,8,81,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkError">
+				<property name="sourceAnchor" value="1101,315"/>
+				<property name="targetAnchor" value="1348,575"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkError">
+					<property name="bounds" value="1330,524,14,29"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkError">
+					<property name="bounds" value="1240,580,105,29"/>
+					<property name="weight" value="0.693350538569941"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkArRepairInstruction">
+				<property name="sourceAnchor" value="771,-4"/>
+				<property name="targetAnchor" value="478,-257"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkArRepairInstruction">
+					<property name="bounds" value="520,-254,162,29"/>
+					<property name="weight" value="0.9125655089240295"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkArRepairInstruction">
+					<property name="bounds" value="486,-282,14,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Person">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-13,615,170,221"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Instruction">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-25,-125,241,221"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Thing">
+			<property name="bounds" value="1015,916,226,301"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.Thing:lnkLocation">
+				<property name="sourceAnchor" value="1020,931"/>
+				<property name="targetAnchor" value="890,931"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.Thing:lnkLocation">
+					<property name="bounds" value="904,934,102,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.Thing:lnkLocation">
+					<property name="bounds" value="900,899,14,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Device">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="674,1055,261,241"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Class20"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.Device:Thing">
+				<property name="sourceAnchor" value="940,1139"/>
+				<property name="targetAnchor" value="1020,1139"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.NFCtag">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1275,1379,222,181"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Operation20"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.NFCtag:Thing">
+				<property name="sourceAnchor" value="1333,1384"/>
+				<property name="targetAnchor" value="1229,1222"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Appliance">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1435,916,200,240"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.Appliance:Thing">
+				<property name="sourceAnchor" value="1440,1032"/>
+				<property name="targetAnchor" value="1246,1032"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.PC">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="503,1375,122,121"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.PC:Device">
+				<property name="sourceAnchor" value="629,1380"/>
+				<property name="targetAnchor" value="708,1301"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.HoloLens">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="674,1376,150,120"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.HoloLens:Device">
+				<property name="sourceAnchor" value="803,1381"/>
+				<property name="targetAnchor" value="803,1301"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Phablet">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="883,1376,120,120"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Operation20"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.Phablet:Device">
+				<property name="sourceAnchor" value="934,1381"/>
+				<property name="targetAnchor" value="934,1301"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.ExpertRepairer">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="46,1001,221,255"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.ExpertRepairer:lnkSchedule">
+				<property name="sourceAnchor" value="167,1261"/>
+				<property name="targetAnchor" value="167,1346"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.ExpertRepairer:Repairer">
+				<property name="sourceAnchor" value="260,1006"/>
+				<property name="targetAnchor" value="260,869"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.NoviceRepairer">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="315,1001,200,216"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Property20"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.NoviceRepairer:Repairer">
+				<property name="sourceAnchor" value="373,1006"/>
+				<property name="targetAnchor" value="373,869"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::1g64yj2979b6qkdstz7">
+			<property name="bounds" value="943,-225,152,58"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.CoffeeMachine">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1375,1216,260,121"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.CoffeeMachine:Appliance">
+				<property name="sourceAnchor" value="1519,1221"/>
+				<property name="targetAnchor" value="1519,1161"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Location">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="675,676,210,261"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.ArRepairInstruction">
+			<property name="bounds" value="264,-465,209,221"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.ArRepairInstruction:Instruction">
+				<property name="sourceAnchor" value="269,-247"/>
+				<property name="targetAnchor" value="157,-120"/>
+				<property name="bendpoints" value="200,-180"/>
+				<property name="smooth_bendpoints" value="200,-180"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.RepairInstruction:Instruction">
+				<property name="sourceAnchor" value="271,79"/>
+				<property name="targetAnchor" value="181,106"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.VideoRepairInstruction">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="276,-205,208,221"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.VideoRepairInstruction:Instruction">
+				<property name="sourceAnchor" value="281,-10"/>
+				<property name="targetAnchor" value="221,-10"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.TextRepairInstruction">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="266,35,228,201"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.TextRepairInstruction:Instruction">
+				<property name="sourceAnchor" value="271,94"/>
+				<property name="targetAnchor" value="221,94"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.ThingCatalog">
+			<property name="bounds" value="1015,516,169,348"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.ThingCatalog:lnkDevice">
+				<property name="sourceAnchor" value="1104,869"/>
+				<property name="targetAnchor" value="1104,921"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.ThingCatalog:lnkDevice">
+					<property name="bounds" value="1107,882,30,29"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.CurrentError">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1343,555,273,322"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.NFCtagReader">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1041,1379,200,114"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.NFCtagReader:Thing">
+				<property name="sourceAnchor" value="1111,1384"/>
+				<property name="targetAnchor" value="1111,1222"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.Schedule">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="115,1341,200,189"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>
