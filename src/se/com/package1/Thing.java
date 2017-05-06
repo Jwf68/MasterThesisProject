@@ -24,7 +24,7 @@ public abstract class Thing {
 
 	@Override
 	public String toString() {
-		return "Thing [lnkLocation=" + lnkLocation + ", identifier=" + identifier + ", model=" + model
+		return " \n        Thing [lnkLocation=" + lnkLocation + ", identifier=" + identifier + ", model=" + model
 				+ ", manufacturer=" + manufacturer + "]";
 	}
 	

@@ -54,7 +54,7 @@ public abstract class Repairer extends Person {
 	
 	@Override
 	public String toString() {
-		return "Repairer [repairerID=" + repairerID + ", lnkLocation=" + lnkLocation + ", lnkDevice=" + lnkDevice + "]";
+		return "Repairer [repairerID=" + repairerID + ", lnkLocation=" + lnkLocation + "\n  lnkDevice=" + lnkDevice + "]";
 	}
 
 

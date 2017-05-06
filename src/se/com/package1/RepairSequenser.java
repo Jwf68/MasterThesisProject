@@ -4,6 +4,7 @@ import java.util.Date;
 
 import se.com.package1.Device.InstructionFormatCapability;
 import se.com.package1.ErrorMetadata.ErrorDifficultyLevel;
+import se.com.ui.MainWindow;
 
 /**
  * @stereotype Controller
@@ -11,7 +12,7 @@ import se.com.package1.ErrorMetadata.ErrorDifficultyLevel;
  *  Repair sequencer contains all the major logic for the application
  */
 
-class RepairSequenser {
+public class RepairSequenser {
 	
 	
 	
@@ -83,9 +84,10 @@ class RepairSequenser {
 	 * @label Store current instruction
 	 * @supplierCardinality 1
 	 */
+	private MainWindow mainWindow;
 	
-	public RepairSequenser() {
-		
+	public RepairSequenser(MainWindow mw) {
+		this.mainWindow = mw;
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -163,7 +165,7 @@ class RepairSequenser {
 		
 		printEvent(lnkCurrentRepairer.getName() +" gets notified through the coffee machines display to use the nearby device");
 		printEvent("Coffee machine display: Follow the instruction type "+ requiredInstructionFormatCapability.toString() + " use the nearby device: " + 	compatibleDevice.getClass().getName().toString()
-				+ " \n " + compatibleDevice.toString() + " and scanning the QRcode");	
+				+ " " + compatibleDevice.toString() + " and scanning the QRcode");	
 		
 		printEvent("The device scans the QRcode and the instructions is fetched by the device and the user is logged on");
 		// add device link to repairer
@@ -277,9 +279,11 @@ class RepairSequenser {
 		
 	}
 	
+	
 
 	private void printEvent (String event) {
 		System.out.println(event);
+		mainWindow.populateEventLog(event);
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException ie){

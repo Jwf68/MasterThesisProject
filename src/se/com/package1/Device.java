@@ -16,7 +16,7 @@ public class Device extends Thing {
 	
 	@Override
 	public String toString() {
-		return super.toString() + " Device [instructionFormatCapability=" + instructionFormatCapability + "]" ;
+		return super.toString() + "\n         Device [instructionFormatCapability=" + instructionFormatCapability + "]" ;
 	}
 
 	public enum InstructionFormatCapability {

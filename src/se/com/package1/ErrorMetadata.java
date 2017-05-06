@@ -31,7 +31,7 @@ public class ErrorMetadata {
 	
 	@Override
 	public String toString() {
-		return "ErrorMetadata [errorCode=" + errorCode + ", errorTime=" + errorTime + ", errorName=" + errorName
+		return "ErrorMetadata [errorCode=" + errorCode + ", errorTime=" + errorTime + ",\n      errorName=" + errorName
 				+ ", errorDifficultyLevel=" + errorDifficultyLevel + "]";
 	}
 
