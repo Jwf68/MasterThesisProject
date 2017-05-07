@@ -5,5 +5,18 @@
 	<view uin="V1hexuhj2d6lror3vj3kc">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:se.com.ui.VideoPlayer">
+			<property name="bounds" value="5,5,200,239"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.ui.MainWindow">
+			<property name="bounds" value="225,5,200,389"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.ui.PdfViewer">
+			<property name="bounds" value="16,263,200,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>

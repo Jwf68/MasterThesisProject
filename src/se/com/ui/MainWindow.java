@@ -81,7 +81,11 @@ public class MainWindow extends JFrame {
 //				    	buttonOK.setEnabled(false);
 				    	eventsJTextField.setText("");
 						RepairSequenser rs = new se.com.package1.RepairSequenser(MainWindow.this);
-						rs.scenarioStart();
+						if (optionNoviceBerit.isSelected()) {
+							rs.scenarioStart(2);
+						} if (optionExpertGunnar.isSelected()) {
+							rs.scenarioStart(7);
+						}
 				    }
 				};
 				scenarioThread.start();
