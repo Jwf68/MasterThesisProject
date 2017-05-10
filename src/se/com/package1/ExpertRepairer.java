@@ -6,25 +6,28 @@ package se.com.package1;
  */
 public class ExpertRepairer extends Repairer {
 
-	private se.com.package1.Schedule lnkSchedule = new Schedule(false);
+	
 	/**
 	 * @directed true
 	 */
 	private String serviceProvider;
 	
 	
-	public ExpertRepairer(String name, int repairerID, String serviceProvider, boolean working, Location lnkLocation, Device lnkDevice) {
+	public ExpertRepairer(String name, int repairerID, String serviceProvider, Location lnkLocation, Device lnkDevice) {
 		super(name, repairerID, lnkLocation, lnkDevice);
 		this.serviceProvider = serviceProvider;
 		
-		lnkSchedule.setWorking(working);
 	}
-	
-	
+
+
 	@Override
 	public String toString() {
-		return "ExpertRepairer [serviceProvider=" + serviceProvider + ", working=" + isWorking() + "]";
+		return "ExpertRepairer [serviceProvider=" + serviceProvider
+				+ ", toStringDevices()= " + toStringDevices() 
+				+ ", getLnkLocation()=" + getLnkLocation() + ", getRepairerID()=" + getRepairerID() + ", getName()="
+				+ getName();
 	}
+
 
 
 	public String getServiceProvider() {
@@ -33,9 +36,4 @@ public class ExpertRepairer extends Repairer {
 	public void setServiceProvider(String serviceProvider) {
 		this.serviceProvider = serviceProvider;
 	}
-
-	public boolean isWorking() {
-		return lnkSchedule.isWorking();
-	}
-
 }

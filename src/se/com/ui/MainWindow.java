@@ -1,14 +1,16 @@
 package se.com.ui;
 
+import javax.swing.AbstractButton;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
-import se.com.package1.RepairSequenser;
+import se.com.package1.GoalManager;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,24 +30,30 @@ public class MainWindow extends JFrame {
 	private JRadioButton optionNoviceBerit = new JRadioButton("Novice repairer Berit");
 	private JRadioButton optionExpertGunnar = new JRadioButton("Expert repairer Gunnar");
 	private JLabel labelEvents = new JLabel("Event log");
-	private JTextArea eventsJTextField = new JTextArea(10, 10);
-	private JPanel jp = new JPanel();
-	
+	private JTextArea eventsJTextField = new JTextArea();
+	private JTextArea ECOutputJTextField = new JTextArea();
+	private JLabel labelECOutput = new JLabel("Current EC");
+
 	public MainWindow() {
 		super("System simulation");
-		
+
 		eventsJTextField.setEditable(false);
 		eventsJTextField.setText("");
 		eventsJTextField.setFont(eventsJTextField.getFont().deriveFont(16f));
 		eventsJTextField.setMargin(getInsets());
+		ECOutputJTextField.setEditable(false);
+		ECOutputJTextField.setText("");
+		ECOutputJTextField.setFont(eventsJTextField.getFont().deriveFont(16f));
+		ECOutputJTextField.setMargin(getInsets());
+		
 		ButtonGroup group = new ButtonGroup();
 		group.add(optionNoviceBerit);
 		group.add(optionExpertGunnar);
 		optionNoviceBerit.setSelected(true);
-		
-//		jp.setLayout(new BoxLayout(jp, BoxLayout.Y_AXIS));
-		//jp.setAlignmentX(CENTER_ALIGNMENT);
-		
+
+		// jp.setLayout(new BoxLayout(jp, BoxLayout.Y_AXIS));
+		// jp.setAlignmentX(CENTER_ALIGNMENT);
+
 		Box top = Box.createVerticalBox();
 		top.add(optionNoviceBerit);
 		top.add(optionExpertGunnar);
@@ -54,49 +62,61 @@ public class MainWindow extends JFrame {
 		Box bottom = Box.createVerticalBox();
 		bottom.add(labelEvents);
 		bottom.add(eventsJTextField);
+
+		Box right = Box.createVerticalBox();
+		right.add(labelECOutput );
+		right.add(ECOutputJTextField);
 		
+
 		Box allBoxes = Box.createHorizontalBox();
 		allBoxes.add(top);
 		allBoxes.add(bottom);
-		
-		this.setSize(new Dimension(1100,800));
+		allBoxes.add(right);
+
+		this.setSize(new Dimension(2200, 800));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		this.add(allBoxes);
-		
-		
-		
-		//LISTENERS
+
+		// LISTENERS
 		RadioButtonActionListener actionListener = new RadioButtonActionListener();
 		optionNoviceBerit.addActionListener(actionListener);
 		optionExpertGunnar.addActionListener(actionListener);
 
 		buttonOK.addActionListener(new ActionListener() {
-
+			
 			@Override
 			public void actionPerformed(ActionEvent event) {
-
-				Thread scenarioThread = new Thread() {
-				    public void run() {
-//				    	buttonOK.setEnabled(false);
-				    	eventsJTextField.setText("");
-						RepairSequenser rs = new se.com.package1.RepairSequenser(MainWindow.this);
+				 Thread scenarioThread = new Thread() {
+					public void run() {
+						// buttonOK.setEnabled(false);
+						eventsJTextField.setText("");
+						ECOutputJTextField.setText("");
+						GoalManager rs = new se.com.package1.GoalManager(MainWindow.this);
 						if (optionNoviceBerit.isSelected()) {
-							rs.scenarioStart(2);
-						} if (optionExpertGunnar.isSelected()) {
-							rs.scenarioStart(7);
+							rs.startECForming(2);
 						}
-				    }
+						if (optionExpertGunnar.isSelected()) {
+							rs.startECForming(7);
+						}
+					}
 				};
+				scenarioThread.interrupt();
 				scenarioThread.start();
 			}
 		});
 	}
-	
-	public void populateEventLog(String newEvent){
+
+	public void populateEventLog(String newEvent) {
 		String currentText = eventsJTextField.getText();
-        String newEventToAppend = currentText + "\n\n   " + newEvent;
-		eventsJTextField.setText(newEventToAppend);	
+		String newEventToAppend = currentText + "\n\n   " + newEvent;
+		eventsJTextField.setText(newEventToAppend);
+	}
+
+	public void populateECOutputLog(String newEvent) {
+		String currentText = ECOutputJTextField.getText();
+		String newEventToAppend = currentText + "\n\n   " + newEvent;
+		ECOutputJTextField.setText(newEventToAppend);
 	}
 
 	class RadioButtonActionListener implements ActionListener {

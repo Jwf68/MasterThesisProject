@@ -8,6 +8,11 @@ import java.util.HashSet;
  */
 public class NoviceRepairer extends Repairer {
 	private HashSet<Integer> experienceHs = new HashSet<Integer>(); // (Similar repair task before)
+	public enum NoviceRepairerExperienceLevel {
+		NEWBIE, INTERMEDIATE, SKILLFUL
+	}
+	
+	private NoviceRepairerExperienceLevel expLevel = NoviceRepairerExperienceLevel.NEWBIE;
 	
 	public NoviceRepairer(String name, int repairerID, int experience, Location lnkLocation, Device lnkDevice) {
 		super(name, repairerID, lnkLocation, lnkDevice);
@@ -16,12 +21,12 @@ public class NoviceRepairer extends Repairer {
 	
 	@Override
 	public String toString() {
-		return "NoviceRepairer " + this.getName() +  " [repairerID=" + experienceHs + ", lnkLocation=" + getLnkLocation() + ", lnkDevice=" + toStringDevices() + "]";
+		return "NoviceRepairer " + this.getName() +  " [repairerID=" + getRepairerID() + ", lnkLocation=" + getLnkLocation() + "\n lnkDevice=" + toStringDevices() + "]";
 	}
 
 
 
-	public Boolean isExperience(int experience) {
+	public Boolean isExperienceHS(int experience) {
 		return experienceHs.contains(experience);
 	}
 
@@ -29,7 +34,25 @@ public class NoviceRepairer extends Repairer {
 		this.experienceHs.add(experience);
 	}
 
+	public String increaseExperience() {
+		switch (expLevel) {
+		case NEWBIE:
+			expLevel = NoviceRepairerExperienceLevel.INTERMEDIATE;
+			break;
+		case INTERMEDIATE:
+			expLevel = NoviceRepairerExperienceLevel.SKILLFUL;
+			break;
 
+		default:
+			break;
+		}
+		return "The repairers experience has increased to: "+ expLevel;
+	}
+	
+	public NoviceRepairerExperienceLevel getExperienceLevel () {
+		return this.expLevel;
+		
+	}
 
 	
 }

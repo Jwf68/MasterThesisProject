@@ -13,6 +13,7 @@ public class ErrorMetadata {
 	private int errorCode;
 	private Date errorTime; //(time of day (complexity level of error))
 	private String errorName;
+	private boolean errorUrgent;
 //	private String difficultLevel; //of error task (NOVICE OR EXPERT)
 	
 	public enum ErrorDifficultyLevel {
@@ -21,14 +22,25 @@ public class ErrorMetadata {
 	
 	private ErrorDifficultyLevel errorDifficultyLevel;
 	
-	public ErrorMetadata (int errorCode, Date errorTime, String errorName, ErrorDifficultyLevel errorDifficultyLevel) {
+	public ErrorMetadata (int errorCode, Date errorTime, String errorName, ErrorDifficultyLevel errorDifficultyLevel, boolean errorUrgent) {
 		this.setErrorCode(errorCode);
 		this.setErrorTime(errorTime);
 		this.setErrorName(errorName);
 		this.setErrorDifficultyLevel(errorDifficultyLevel);
+		this.setErrorUrgent(errorUrgent);
 	}
 	
 	
+	public boolean isErrorUrgent() {
+		return errorUrgent;
+	}
+
+
+	public void setErrorUrgent(boolean errorUrgent) {
+		this.errorUrgent = errorUrgent;
+	}
+
+
 	@Override
 	public String toString() {
 		return "ErrorMetadata [errorCode=" + errorCode + ", errorTime=" + errorTime + ",\n      errorName=" + errorName

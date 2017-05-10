@@ -22,7 +22,11 @@ public class CoffeeMachine extends Appliance {
 
 	@Override
 	public String toString() {
-		return "CoffeeMachine []";
+		return "CoffeeMachine "+" getSerialNumber()=" + getSerialNumber()
+				+ ", getFirmwareVersion()=" + getFirmwareVersion() + ", getModel()=" + getModel()
+				+ ", getManufacturer()=" + getManufacturer() + "\n getLnkLocation()=" + getLnkLocation()
+				+ ", getIdentifier()=" + getIdentifier() ;
 	}
+
 
 }

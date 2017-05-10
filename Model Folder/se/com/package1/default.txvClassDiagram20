@@ -6,103 +6,6 @@
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
-		<reference referencedUin="jdt:e_class:src:se.com.package1.RepairSequenser">
-			<property name="bounds" value="1505,1004,200,392"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkRepairerCatalog">
-				<property name="sourceAnchor" value="1710,1312"/>
-				<property name="targetAnchor" value="2436,1289"/>
-				<property name="bendpoints" value="2289,1316"/>
-				<property name="smooth_bendpoints" value="2289,1316"/>
-				<property name="location_set_by_user" value="true"/>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkRepairerCatalog">
-					<property name="bounds" value="2412,1259,14,29"/>
-				</reference>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkRepairerCatalog">
-					<property name="bounds" value="1948,1317,103,29"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkVideoRepairInstruction">
-				<property name="sourceAnchor" value="1510,1279"/>
-				<property name="targetAnchor" value="527,1725"/>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkVideoRepairInstruction">
-					<property name="bounds" value="925,1546,186,29"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkVideoRepairInstruction">
-					<property name="bounds" value="527,1687,14,29"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkThingCatalog">
-				<property name="sourceAnchor" value="1610,1009"/>
-				<property name="targetAnchor" value="1843,683"/>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkThingCatalog">
-					<property name="bounds" value="1739,832,84,29"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkThingCatalog">
-					<property name="bounds" value="1826,654,14,29"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkDocFactoryCommunicator">
-				<property name="sourceAnchor" value="1681,1401"/>
-				<property name="targetAnchor" value="1681,1767"/>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkDocFactoryCommunicator">
-					<property name="bounds" value="1684,1728,14,29"/>
-				</reference>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkDocFactoryCommunicator">
-					<property name="bounds" value="1486,1570,192,29"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrentRepairer">
-				<property name="sourceAnchor" value="1710,1112"/>
-				<property name="targetAnchor" value="2150,711"/>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrentRepairer">
-					<property name="bounds" value="2133,682,14,29"/>
-				</reference>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkCurrentRepairer">
-					<property name="bounds" value="1947,897,127,29"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkTextRepairInstruction">
-				<property name="sourceAnchor" value="1510,1355"/>
-				<property name="targetAnchor" value="1266,1725"/>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkTextRepairInstruction">
-					<property name="bounds" value="1252,1692,14,29"/>
-				</reference>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkTextRepairInstruction">
-					<property name="bounds" value="1401,1526,189,29"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkErrorCatalog">
-				<property name="sourceAnchor" value="1510,1279"/>
-				<property name="targetAnchor" value="650,1279"/>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkErrorCatalog">
-					<property name="bounds" value="1040,1282,81,29"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkErrorCatalog">
-					<property name="bounds" value="660,1247,14,29"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkError">
-				<property name="sourceAnchor" value="1560,1009"/>
-				<property name="targetAnchor" value="1264,661"/>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkError">
-					<property name="bounds" value="1302,669,14,29"/>
-				</reference>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkError">
-					<property name="bounds" value="1294,821,105,29"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairSequenser:lnkArRepairInstruction">
-				<property name="sourceAnchor" value="1510,1279"/>
-				<property name="targetAnchor" value="895,1725"/>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkArRepairInstruction">
-					<property name="bounds" value="1121,1565,162,29"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairSequenser:lnkArRepairInstruction">
-					<property name="bounds" value="895,1683,14,29"/>
-				</reference>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:se.com.package1.NoviceRepairer">
 			<property name="bounds" value="1957,1093,200,214"/>
 			<property name="location_set_by_user" value="true"/>
@@ -159,12 +62,6 @@
 			<reference referencedUin="jdt:l_ast:src:se.com.package1.Thing:lnkLocation">
 				<property name="sourceAnchor" value="1367,274"/>
 				<property name="targetAnchor" value="1469,413"/>
-				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.Thing:lnkLocation">
-					<property name="bounds" value="1303,329,102,29"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.Thing:lnkLocation">
-					<property name="bounds" value="1466,376,14,29"/>
-				</reference>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:se.com.package1.Device">
@@ -199,17 +96,6 @@
 				<property name="targetAnchor" value="1371,210"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:se.com.package1.ThingCatalog">
-			<property name="bounds" value="1838,371,200,339"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.ThingCatalog:lnkDevice">
-				<property name="sourceAnchor" value="1843,484"/>
-				<property name="targetAnchor" value="1371,201"/>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.ThingCatalog:lnkDevice">
-					<property name="bounds" value="1380,174,30,29"/>
-				</reference>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:se.com.package1.ExpertRepairer">
 			<property name="bounds" value="2177,1093,200,214"/>
 			<property name="location_set_by_user" value="true"/>
@@ -226,19 +112,8 @@
 			<property name="bounds" value="2148,42,194,189"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:se.com.package1.RepairerCatalog">
-			<property name="bounds" value="2431,1080,200,214"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.RepairerCatalog:lnkRepairer">
-				<property name="sourceAnchor" value="2536,1085"/>
-				<property name="targetAnchor" value="2350,782"/>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.RepairerCatalog:lnkRepairer">
-					<property name="bounds" value="2369,782,30,29"/>
-				</reference>
-			</reference>
-		</reference>
 		<reference referencedUin="design:view:::V1hexuhj293y4y5erijcj">
-			<property name="bounds" value="5,1925,512,861"/>
+			<property name="bounds" value="5,1925,511,861"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:se.com.package1.Phablet">
@@ -256,21 +131,6 @@
 				<property name="sourceAnchor" value="1199,1725"/>
 				<property name="targetAnchor" value="210,1251"/>
 			</reference>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:se.com.package1.ErrorCatalog">
-			<property name="bounds" value="445,1080,200,214"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:se.com.package1.ErrorCatalog:lnkErrorMetadata">
-				<property name="sourceAnchor" value="550,1085"/>
-				<property name="targetAnchor" value="550,702"/>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.ErrorCatalog:lnkErrorMetadata">
-					<property name="bounds" value="553,703,30,29"/>
-				</reference>
-			</reference>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:se.com.package1.CurrentError">
-			<property name="bounds" value="1059,396,200,289"/>
-			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:se.com.package1.ArRepairInstruction">
 			<property name="bounds" value="757,1720,200,189"/>
@@ -327,9 +187,100 @@
 				<property name="targetAnchor" value="1171,67"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:se.com.package1.Schedule">
-			<property name="bounds" value="224,104,200,189"/>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.CurrentECGoal">
+			<property name="bounds" value="1059,396,200,289"/>
 			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.GoalManager">
+			<property name="bounds" value="1505,1004,200,442"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:lnkArRepairInstruction">
+				<property name="sourceAnchor" value="1510,1279"/>
+				<property name="targetAnchor" value="895,1725"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:lnkArRepairInstruction">
+					<property name="bounds" value="1121,1565,162,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.GoalManager:lnkArRepairInstruction">
+					<property name="bounds" value="895,1683,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:lnkError">
+				<property name="sourceAnchor" value="1560,1009"/>
+				<property name="targetAnchor" value="1264,661"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:lnkThingCatalog">
+				<property name="sourceAnchor" value="1610,1009"/>
+				<property name="targetAnchor" value="1843,683"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:lnkThingCatalog">
+					<property name="bounds" value="1739,832,84,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.GoalManager:lnkThingCatalog">
+					<property name="bounds" value="1826,654,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:lnkErrorCatalog">
+				<property name="sourceAnchor" value="1510,1279"/>
+				<property name="targetAnchor" value="650,1279"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.GoalManager:lnkErrorCatalog">
+					<property name="bounds" value="660,1247,14,29"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:lnkErrorCatalog">
+					<property name="bounds" value="1040,1282,81,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:lnkTextRepairInstruction">
+				<property name="sourceAnchor" value="1510,1355"/>
+				<property name="targetAnchor" value="1266,1725"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.GoalManager:lnkTextRepairInstruction">
+					<property name="bounds" value="1252,1692,14,29"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:lnkTextRepairInstruction">
+					<property name="bounds" value="1401,1526,189,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:aPopulateDatabase">
+				<property name="sourceAnchor" value="1510,1279"/>
+				<property name="targetAnchor" value="527,1725"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:aPopulateDatabase">
+					<property name="bounds" value="925,1546,186,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.GoalManager:aPopulateDatabase">
+					<property name="bounds" value="527,1687,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:lnkDocFactoryCommunicator">
+				<property name="sourceAnchor" value="1681,1451"/>
+				<property name="targetAnchor" value="1681,1767"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:lnkDocFactoryCommunicator">
+					<property name="bounds" value="1486,1595,192,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.GoalManager:lnkDocFactoryCommunicator">
+					<property name="bounds" value="1684,1728,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:lnkCurrentRepairer">
+				<property name="sourceAnchor" value="1710,1112"/>
+				<property name="targetAnchor" value="2150,711"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:lnkCurrentRepairer">
+					<property name="bounds" value="1947,897,127,29"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.GoalManager:lnkCurrentRepairer">
+					<property name="bounds" value="2133,682,14,29"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:se.com.package1.GoalManager:lnkRepairerCatalog">
+				<property name="sourceAnchor" value="1710,1312"/>
+				<property name="targetAnchor" value="2436,1289"/>
+				<property name="bendpoints" value="2289,1316"/>
+				<property name="smooth_bendpoints" value="2289,1316"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:se.com.package1.GoalManager:lnkRepairerCatalog">
+					<property name="bounds" value="2412,1259,14,29"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:lnkRepairerCatalog">
+					<property name="bounds" value="1948,1317,103,29"/>
+				</reference>
+			</reference>
 		</reference>
 	</view>
 </nodeSet>

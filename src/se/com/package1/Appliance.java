@@ -11,8 +11,6 @@ public class Appliance extends Thing {
 	private int serialNumber;
 	private int firmwareVersion;
 	
-	
-	
 	public Appliance(Location lnkLocation, int identifier, String model, String manufacturer, int serialNumber,
 			int firmwareVersion) {
 		

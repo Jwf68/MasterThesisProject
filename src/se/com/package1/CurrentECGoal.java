@@ -7,17 +7,30 @@ package se.com.package1;
  *
  */
 
-public class CurrentError {
+public class CurrentECGoal {
 
+
+	
+
+	/**
+	 * @directed true
+	 * @supplierCardinality 1 
+	 */
+	se.com.package1.ErrorMetadata lnkErrorMetadata;
+	/**
+	 * @directed true
+	 * @supplierCardinality 1 
+	 */
+	
+	private se.com.package1.Thing lnkThing;
 	private int errorCode;
 	private int thingWithErrorID;
 	
-	public CurrentError(int errorCode, int thingWithError) {
-		super();
-		this.errorCode = errorCode;
-		this.thingWithErrorID = thingWithError;
+	public CurrentECGoal() {
+		// TODO Auto-generated constructor stub
 	}
 	
+
 
 	@Override
 	public String toString() {
