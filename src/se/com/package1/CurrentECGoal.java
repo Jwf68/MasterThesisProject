@@ -9,9 +9,6 @@ package se.com.package1;
 
 public class CurrentECGoal {
 
-
-	
-
 	/**
 	 * @directed true
 	 * @supplierCardinality 1 

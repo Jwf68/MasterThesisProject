@@ -5,7 +5,7 @@ import java.util.Date;
 import se.com.package1.Device.InstructionFormatCapability;
 
 /**
- * Information about the error than may occur
+ * Information about the error than may occur.
  * @author hp
  *
  */

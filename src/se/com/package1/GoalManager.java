@@ -6,6 +6,7 @@ import se.com.package1.Database.ErrorCatalog;
 import se.com.package1.Database.RepairerCatalog;
 import se.com.package1.Database.ThingCatalog;
 import se.com.package1.Device.InstructionFormatCapability;
+import se.com.ui.ECWindow;
 import se.com.ui.MainWindow;
 import se.com.ui.PdfViewer;
 import se.com.ui.VideoPlayer;
@@ -43,7 +44,7 @@ public class GoalManager {
 	private Repairer lnkCurrentRepairer;
 	/**
 	 * @directed true
-	 * @label Current error
+	 * @label Current goal
 	 * @supplierCardinality 1
 	 */
 	private CurrentECGoal lnkError;
@@ -77,19 +78,20 @@ public class GoalManager {
 	 * @supplierCardinality 1
 	 */
 	private MainWindow mainWindow;
+	private ECWindow aECWindow;
+	
+	private DeviceManager aPopulateDatabase;
 
-	private PopulateDatabase aPopulateDatabase;
-
-	public GoalManager(MainWindow mw) {
+	public GoalManager(MainWindow mw, ECWindow aECWindow) {
 		this.mainWindow = mw;
-
+		this.aECWindow = aECWindow;
 		this.lnkRepairerCatalog = new se.com.package1.Database.RepairerCatalog();
 		this.lnkErrorCatalog = new se.com.package1.Database.ErrorCatalog();
 		this.lnkThingCatalog = new se.com.package1.Database.ThingCatalog();
 		this.lnkDocFactoryCommunicator = new DocFactoryCommunicator();
 		this.lnkError = new CurrentECGoal();
 
-		this.aPopulateDatabase = new PopulateDatabase(lnkRepairerCatalog, lnkErrorCatalog, lnkThingCatalog,
+		this.aPopulateDatabase = new DeviceManager(lnkRepairerCatalog, lnkErrorCatalog, lnkThingCatalog,
 				lnkDocFactoryCommunicator, lnkError);
 		aPopulateDatabase.initiateDatabase();
 	}
@@ -102,11 +104,12 @@ public class GoalManager {
 		//EC IS FORMED
 		printEvent("There is an error in the coffee machine");
 		if (currentError.isErrorUrgent()) {
-			printEvent("Coffee machine display: \n BLINK SCEEN IN RED AND NOTIFY ALL NEARBY REPAIRERS ABOUT ERROR \n" + currentError.toString());
+			printEvent("Coffee machine display: \n BLINK SCREEN IN RED AND NOTIFY ALL NEARBY REPAIRERS ABOUT ERROR \n" + currentError.toString());
+			printToECOutput("Ec goal is to repair the error: \n" + currentError.toString() );
 		}else{
+			printEvent("The error is not urgent and the system will only print out the error to the Coffee machine display");
 			printEvent("Coffee machine display: \n" + currentError.toString());
-			printToECOutput(currentError.toString()
-					+ "\n EC forming starts");
+			printToECOutput("Ec goal is to repair the error: \n" + currentError.toString() );
 		}
 		
 		//GET DEVICES WITH SAME LOCATION AS COFFEE MACHINE 
@@ -116,11 +119,7 @@ public class GoalManager {
 			strDevices += thing.toString() + "\n";
 		}
 		printToECOutput("Detected nearby devices: \n" + strDevices);
-		
-		
-		
-
-		
+				
 		// Scenario starts
 		lnkCurrentRepairer = lnkRepairerCatalog
 				.getRepairer(((NFCtag) lnkThingCatalog.getThing(repairersTagID)).getRepairerID());
@@ -270,7 +269,7 @@ public class GoalManager {
 	}
 
 	private void printToECOutput(String event) {
-		mainWindow.populateECOutputLog(event);
+		aECWindow.populateECOutputLog(event);
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException ie) {

@@ -80,18 +80,10 @@
 				<property name="targetAnchor" value="967,665"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:se.com.package1.CoffeeMachine">
-			<property name="bounds" value="225,1130,200,139"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:l_gnt:src:se.com.package1.CoffeeMachine:Appliance">
-				<property name="sourceAnchor" value="330,1135"/>
-				<property name="targetAnchor" value="330,652"/>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:se.com.package1.NFCtag">
 			<property name="bounds" value="1618,446,200,189"/>
 			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:l_gnt:src:se.com.package1.NFCtag:Thing">
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.NFCtag:Resources">
 				<property name="sourceAnchor" value="1723,451"/>
 				<property name="targetAnchor" value="1371,210"/>
 			</reference>
@@ -182,7 +174,7 @@
 		<reference referencedUin="jdt:e_class:src:se.com.package1.NFCtagReader">
 			<property name="bounds" value="5,5,200,114"/>
 			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:l_gnt:src:se.com.package1.NFCtagReader:Thing">
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.NFCtagReader:Resources">
 				<property name="sourceAnchor" value="210,67"/>
 				<property name="targetAnchor" value="1171,67"/>
 			</reference>
@@ -280,6 +272,14 @@
 				<reference referencedUin="label:label:jdt:l_ast:src:se.com.package1.GoalManager:lnkRepairerCatalog">
 					<property name="bounds" value="1948,1317,103,29"/>
 				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.package1.CoffeeMachine">
+			<property name="bounds" value="225,1130,200,139"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:se.com.package1.CoffeeMachine:Appliance">
+				<property name="sourceAnchor" value="330,1135"/>
+				<property name="targetAnchor" value="330,652"/>
 			</reference>
 		</reference>
 	</view>

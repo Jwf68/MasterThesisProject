@@ -2,7 +2,7 @@ package se.com.package1;
 
 
 /**
- * Information about a instruction
+ * Information about a instruction.
  * @author hp
  *
  */

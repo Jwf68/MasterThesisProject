@@ -8,21 +8,24 @@ import se.com.package1.Database.ThingCatalog;
 import se.com.package1.ErrorMetadata.ErrorDifficultyLevel;
 import se.com.ui.MainWindow;
 
-public class PopulateDatabase {
+/**
+ * Scans continuously after devices and stores them in the database.  
+ * @author hp
+ *
+ */
+public class DeviceManager {
 	DocFactoryCommunicator lnkDocFactoryCommunicator;
 	ErrorCatalog lnkErrorCatalog;
 	ThingCatalog lnkThingCatalog;
 	RepairerCatalog lnkRepairerCatalog;
 	CurrentECGoal lnkError;
 	 
-	public PopulateDatabase(RepairerCatalog lnkRepairerCatalog, ErrorCatalog lnkErrorCatalog, ThingCatalog lnkThingCatalog, DocFactoryCommunicator lnkDocFactoryCommunicator, CurrentECGoal lnkError) {
+	public DeviceManager(RepairerCatalog lnkRepairerCatalog, ErrorCatalog lnkErrorCatalog, ThingCatalog lnkThingCatalog, DocFactoryCommunicator lnkDocFactoryCommunicator, CurrentECGoal lnkError) {
 		this.lnkDocFactoryCommunicator = lnkDocFactoryCommunicator;
 		this.lnkRepairerCatalog = lnkRepairerCatalog;
 		this.lnkErrorCatalog = lnkErrorCatalog;
 		this.lnkThingCatalog = lnkThingCatalog;
 		this.lnkError = lnkError;
-
-
 	}
 	// Initiate context (populate catalogs with context related information)
 

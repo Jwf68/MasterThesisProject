@@ -3,9 +3,8 @@ package se.com.package1;
 /**
  * A thing used by the repairers to identify themself to the system
  * @author hp
- *
  */
-public class NFCtag extends Thing {
+public class NFCtag extends Resources {
 	private int repairerID;
 
 	public NFCtag (Location lnkLocation, int identifier, String model, String manufacturer) { 
@@ -23,7 +22,5 @@ public class NFCtag extends Thing {
 
 	public void setRepairerID(int repairerID) {
 		this.repairerID = repairerID;
-	}
-	
-	
+	}	
 }

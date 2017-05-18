@@ -8,6 +8,12 @@ import java.util.List;
 import se.com.package1.Device.InstructionFormatCapability;
 import se.com.package1.NoviceRepairer.NoviceRepairerExperienceLevel;
 
+/**
+ * A wrapper for the classes ThingCatalog, RepairerCatalog and ErrorCatalog. 
+ * @author hp
+ *
+ */
+
 public class Database {
 
 	/**

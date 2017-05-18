@@ -5,7 +5,6 @@ package se.com.package1;
  * @author hp
  *
  */
-
 public class ArRepairInstruction extends Instruction {
 	private String repairInstruction = "AR";
 
@@ -26,7 +25,5 @@ public class ArRepairInstruction extends Instruction {
 	@Override
 	public String toString() {
 		return "ArRepairInstruction [repairInstruction=" + repairInstruction + "]";
-	}
-	
-	
+	}	
 }
