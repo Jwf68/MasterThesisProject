@@ -90,7 +90,7 @@ public class MainWindow extends JFrame {
 
 	public void populateEventLog(String newEvent) {
 		String currentText = eventsJTextField.getText();
-		String newEventToAppend = currentText + "\n\n   " + newEvent;
+		String newEventToAppend = currentText + "\n\n " + newEvent ;
 		eventsJTextField.setText(newEventToAppend);
 	}
 

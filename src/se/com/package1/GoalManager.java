@@ -103,17 +103,19 @@ public class GoalManager {
 		
 		//EC IS FORMED
 		printEvent("There is an error in the coffee machine");
+		
+		//Determine if urgent
 		if (currentError.isErrorUrgent()) {
 			printEvent("Coffee machine display: \n BLINK SCREEN IN RED AND NOTIFY ALL NEARBY REPAIRERS ABOUT ERROR \n" + currentError.toString());
 			printToECOutput("Ec goal is to repair the error: \n" + currentError.toString() );
 		}else{
 			printEvent("The error is not urgent and the system will only print out the error to the Coffee machine display");
-			printEvent("Coffee machine display: \n" + currentError.toString());
-			printToECOutput("Ec goal is to repair the error: \n" + currentError.toString() );
+//			printEvent("Coffee machine display: \n" + currentError.toString());
+			printToECOutput("Ec goal is: Repair the coffee machine: \n" + currentError.toString() );
 		}
 		
 		//GET DEVICES WITH SAME LOCATION AS COFFEE MACHINE 
-		ArrayList<Thing> thingwithlocationList =	lnkThingCatalog.getThingbyLocation( lnkThingCatalog.getThing(lnkError.getThingWithError()).getLnkLocation() );	
+		ArrayList<Thing> thingwithlocationList = lnkThingCatalog.getThingbyLocation( lnkThingCatalog.getThing(lnkError.getThingWithError()).getLnkLocation() );	
 		String strDevices ="";
 		for (Thing thing : thingwithlocationList) {
 			strDevices += thing.toString() + "\n";
@@ -160,10 +162,10 @@ public class GoalManager {
 			// DocFactory and stores it into the corresponding container
 			lnkArRepairInstruction = lnkDocFactoryCommunicator.fetchARInstructions(lnkError.getErrorCode());
 
-			printEvent(lnkCurrentRepairer.getName() + " follows the maintenance instructions on the device "
+			printEvent(lnkCurrentRepairer.getName() + " follows the maintenance instructions: "
 					+ lnkArRepairInstruction.getRepairInstruction());
 			
-			printEvent(((NoviceRepairer)lnkCurrentRepairer).increaseExperience());
+			printEvent("After the successful repair of the coffee machine, "+((NoviceRepairer)lnkCurrentRepairer).increaseExperience());
 
 			// TODO: THE DEVICE HAS RUNTIME ISSUES?
 		}
@@ -193,9 +195,9 @@ public class GoalManager {
 		
 		printEvent(lnkCurrentRepairer.getName()
 				+ " gets notified through the coffee machines display that there is an error");
-		printEvent("Coffee machine display: \n" + currentError.toString());
+//		printEvent("Coffee machine display: \n" + currentError.toString());
 
-		printEvent(lnkCurrentRepairer.getName() + " wants to repair the machine");
+		printEvent(lnkCurrentRepairer.getName() + " notifies the system through a NFC tag reader that "+ lnkCurrentRepairer.getName() +" wants to repair the machine");
 		
 		
 		// COMPARE DEVICE CAPABILITY (AR) WITH THE ERROR DIFFICULTY LEVEL
@@ -210,16 +212,19 @@ public class GoalManager {
 		}
 
 		printEvent(lnkCurrentRepairer.getName()
-				+ " gets notified through the coffee machines display to use the nearby "+ compatibleDevice.getClass().getSimpleName());
-		printEvent(
-				"Coffee machine display: \n Follow the instruction type " + requiredInstructionFormatCapability.toString()
-						+ " use the nearby device: " + compatibleDevice + " and scanning the QRcode");
+				+ " gets notified through the coffee machines display to use the nearby "
+				+ compatibleDevice.getClass().getSimpleName() 
+				+ " and follow the instructions in " + requiredInstructionFormatCapability.toString());
+		
+//		printEvent("Coffee machine display: \n Follow the instruction type " + requiredInstructionFormatCapability.toString()
+//						+ " use the nearby device: " + compatibleDevice + " and scanning the QRcode");
 		
 		printToECOutput("Selected nearby device to use: \n"+ compatibleDevice);
 		
 		
-		printEvent(
-				lnkCurrentRepairer.getName() +" uses the "+ compatibleDevice.getClass().getSimpleName() +" scans the QRcode and the instructions is fetched by the device and "+lnkCurrentRepairer.getName()+" is logged on");
+		printEvent(lnkCurrentRepairer.getName() +" uses the "+ compatibleDevice.getClass().getSimpleName() 
+				+" scans the QRcode and the instructions is fetched by the "+ compatibleDevice.getClass().getSimpleName() 
+				+" and "+lnkCurrentRepairer.getName()+" is logged on");
 		// add device link to repairer
 		lnkCurrentRepairer.addRepairerDevice(compatibleDevice);
 		showInstructions(requiredInstructionFormatCapability);

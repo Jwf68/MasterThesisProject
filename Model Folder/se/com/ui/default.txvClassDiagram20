@@ -11,11 +11,19 @@
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:se.com.ui.MainWindow">
-			<property name="bounds" value="225,5,200,439"/>
+			<property name="bounds" value="225,5,200,389"/>
 			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:se.com.ui.MainWindow:aECWindow">
+				<property name="sourceAnchor" value="329,118"/>
+				<property name="targetAnchor" value="329,118"/>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:se.com.ui.PdfViewer">
 			<property name="bounds" value="16,263,200,89"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:se.com.ui.ECWindow">
+			<property name="bounds" value="224,-4,200,239"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

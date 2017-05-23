@@ -46,7 +46,7 @@ public class NoviceRepairer extends Repairer {
 		default:
 			break;
 		}
-		return "The repairers experience has increased to: "+ expLevel;
+		return "the repairers experience has increased to: "+ expLevel;
 	}
 	
 	public NoviceRepairerExperienceLevel getExperienceLevel () {

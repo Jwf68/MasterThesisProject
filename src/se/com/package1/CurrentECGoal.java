@@ -27,8 +27,6 @@ public class CurrentECGoal {
 		// TODO Auto-generated constructor stub
 	}
 	
-
-
 	@Override
 	public String toString() {
 		return "CurrentError [errorCode=" + errorCode + ", thingWithErrorID=" + thingWithErrorID + "]";
