@@ -30,6 +30,7 @@ public class VideoPlayer {
 
     public void start(String mrl) {
         mediaPlayerComponent.getMediaPlayer().playMedia(mrl);
+    	//mediaPlayerComponent.getMediaPlayer().playMedia("https://iotap.docfactory.com/api/v1/cnt/iotap/name/topic:How_to_change_the_powder_screw_mp4_small?api-key=RUxorkQlkk2SIhrCZPk3Kw!_l3fccObOEOArjXxD8Xurg");
     }
 
     private void exit(int result) {

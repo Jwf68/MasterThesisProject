@@ -18,7 +18,12 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.7.22</version>
 		</dependency>
-		<!-- Remove logger warning -->		
+		<!-- Remove logger warning -->
+		<dependency>
+			<groupId>com.mashape.unirest</groupId>
+			<artifactId>unirest-java</artifactId>
+			<version>1.4.9</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

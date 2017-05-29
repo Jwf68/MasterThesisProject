@@ -2,6 +2,9 @@ package se.com.ui;
 import org.icepdf.ri.common.SwingController;
 import org.icepdf.ri.common.SwingViewBuilder;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import javax.swing.*;
 
 /**
@@ -34,9 +37,14 @@ public class PdfViewer {
         applicationFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         applicationFrame.getContentPane().add(viewerComponentPanel);
 
-        // Now that the GUI is all in place, we can try openning a PDF
+		// Now that the GUI is all in place, we can try openning a PDF
         controller.openDocument(filePath);
-
+//		try {
+//			controller.openDocument(new URL("https://iotap.docfactory.com/api/v1/cnt/iotap/name/topic:How_to_change_the_powder_screw_pdf?api-key=RUxorkQlkk2SIhrCZPk3Kw!_l3fccObOEOArjXxD8Xurg"));
+//		} catch (MalformedURLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}       
         // show the component
         applicationFrame.pack();
         applicationFrame.setVisible(true);
