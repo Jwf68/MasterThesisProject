@@ -1,5 +1,5 @@
 # Forming Emergent Configurations in Smart Office IoT Systems
-This project is part of a Master Thesis written by Simon Gullstrand and Jonas Wahlfrid at Malmä University in the Master programme 2017.
+This project is part of a Master Thesis written by Simon Gullstrand and Jonas Wahlfrid at Malmö University in the Master programme 2017.
 
 ## Description of the application 
 The novel approach, Emergent Configurations of engineering IoT systems in concurrence with the developed Emergent Configurations 
