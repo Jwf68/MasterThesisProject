@@ -19,7 +19,7 @@ These instructions were developed in a seperate project also part of a course at
 Link: https://github.com/warriv93/Augmented-Reality-maintenance-guidance-HoloLens-application/
 
 ## Master Thesis
-Link: https://drive.google.com/file/d/0BxJ1ec4LM8hfTnlPT1J4M2NyeXc/view?usp=sharing 
+Link: http://dspace.mah.se/handle/2043/23007 
 
 ### Popular Science Summary
 Internet of Things is a growing trend that aims to connect everything that can benefit from
